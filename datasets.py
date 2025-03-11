@@ -251,8 +251,7 @@ class ModelDataset:
         features = self.processed_data.iloc[idx: idx + self.window_size][self.feature_columns].values
 
         # Get target returns
-        target_returns = self.processed_data.iloc[idx + self.window_size:idx+self.window_size + self.output_window]['target_returns']
-
+        target_returns = self.processed_data.iloc[idx + self.window_size:idx + self.window_size + self.output_window, self.processed_data.columns.get_loc('target_returns')]
         active_flags = self.processed_data.iloc[idx:idx+self.window_size]['active_positions']
 
         # Convert to PyTorch tensors
