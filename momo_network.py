@@ -32,5 +32,3 @@ output_size = len(train_dataset[0][1])
 
 model = TimeSeriesCNN(input_channels=1,sequence_length=input_len,num_features=input_size, output_sequence_length=5)
 
-
-train_model(model, train_dataset, val_dataset, date_index=0, output_size=output_size, learning_rate=0.003)
