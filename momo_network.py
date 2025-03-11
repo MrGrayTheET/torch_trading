@@ -1,5 +1,5 @@
 from torch_trading.torch_trade import TimeSeriesCNN, train_model
-from datasets import ModelDataset
+from torch_trading.datasets import ModelDataset
 import yfinance as yf
 
 
