@@ -252,7 +252,6 @@ class ModelDataset:
 
         # Get target returns
         target_returns = self.processed_data.iloc[idx + self.window_size:idx + self.window_size + self.output_window, self.processed_data.columns.get_loc('target_returns')]
-        active_flags = self.processed_data.iloc[idx:idx+self.window_size]['active_positions']
 
         # Convert to PyTorch tensors
         # The issue might be that target_returns is a scalar value or a pandas Series
