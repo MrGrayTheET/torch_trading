@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 from statsmodels.tsa.seasonal import STL, MSTL, seasonal_decompose
-from feature_engineering import (atr,
+from torch_trading.feature_engineering import (atr,
                                  tr,
                                  rvol,
                                  get_trading_days,
