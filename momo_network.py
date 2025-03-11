@@ -1,5 +1,4 @@
-from finance_models.torch_trade import TimeSeriesCNN, train_model
-from finance_models.utils import clean_data
+from torch_trading.torch_trade import TimeSeriesCNN, train_model
 from datasets import ModelDataset
 import yfinance as yf
 
